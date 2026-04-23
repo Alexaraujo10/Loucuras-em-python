@@ -1,0 +1,92 @@
+Instruções
+1.    OBJETIVO
+
+Desenvolver um sistema simples de controle bancário utilizando a linguagem Python. O programa deverá interagir com o usuário por meio do terminal, utilizando a função input() para exibir um menu de opções. O objetivo é exercitar conceitos fundamentais como variáveis, estruturas condicionais, estruturas de repetição e manipulação de strings.
+
+2.    DESCRIÇÃO DO PROBLEMA
+
+Crie um programa em Python que simule um sistema bancário com as seguintes funcionalidades:
+
+1 - Adicionar dinheiro (Depósito)
+2 - Sacar dinheiro
+3 - Mostrar extrato
+
+O sistema não deve permitir a realização de saques quando o saldo for insuficiente.
+
+ 3.    ESTRUTURA DO MENU
+
+O programa deverá exibir o seguinte menu ao usuário:
+
+===== MENU =====
+1 - Adicionar Dinheiro
+2 - Sacar Dinheiro
+3 - Mostrar Extrato
+4 - Sair
+Escolha uma opção:
+
+4.    ESPECIFICAÇÃO DAS FUNÇÕES
+
+FUNÇÃO 1: ADICIONAR DINHEIRO
+
+Dados de Entrada:
+    •    Valor do depósito informado pelo usuário.
+
+Processamento Esperado:
+    •    Verificar se o valor é positivo.
+    •    Adicionar o valor ao saldo atual.
+    •    Registrar a operação no extrato.
+
+Dados de Saída:
+    •    Mensagem de confirmação do depósito.
+    •    Atualização do saldo.
+
+Exemplo de Saída:
+Depósito realizado com sucesso!
+Saldo atual: R$ 500.00
+
+FUNÇÃO 2: SACAR DINHEIRO
+
+Dados de Entrada:
+    •    Valor do saque informado pelo usuário.
+
+Processamento Esperado:
+    •    Verificar se o valor é positivo.
+    •    Conferir se há saldo suficiente.
+    •    Subtrair o valor do saldo.
+    •    Registrar a operação no extrato.
+    •    Impedir o saque em caso de saldo insuficiente.
+
+Dados de Saída:
+    •    Mensagem de confirmação ou erro.
+
+Exemplos de Saída:
+
+Saque realizado com sucesso!
+Saldo atual: R$ 300.00
+
+Ou:
+
+Saldo insuficiente para realizar o saque.
+
+FUNÇÃO 3: MOSTRAR EXTRATO
+
+Dados de Entrada:
+    •    Não há entrada direta do usuário além da escolha no menu.
+
+Processamento Esperado:
+    •    Exibir todas as operações realizadas.
+    •    Mostrar o saldo atual.
+
+Dados de Saída:
+
+===== EXTRATO =====
+Depósito: R$ 500.00
+Saque: R$ 200.00
+Saldo atual: R$ 300.00
+
+Caso não haja movimentações:
+
+===== EXTRATO =====
+Não foram realizadas movimentações.
+Saldo atual: R$ 0.00
+
